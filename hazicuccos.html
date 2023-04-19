@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+  </head>
+
+  <body>
+    <label action="/submit" method="post">
+      <label for="firstName">vezetéknév:</label>
+      <input type="text" id="firstName" name="firstName" required />
+      <br />
+      <label for="lastName">Keresztnév:</label>
+      <input type="text" id="lastName" name="lastName" required />
+      <br />
+      <label for="birthdate">Születési Dátum:</label>
+      <input type="date" id="birthdate" name="birthdate" required />
+      <br />
+      <label for="newsletter">valami1:</label>
+      <input type="checkbox" id="newsletter" name="newsletter" />
+      <br />
+      <label for="interests">valami2:</label>
+      <br />
+      <input
+        type="checkbox"
+        id="interests1"
+        name="interests[]"
+        value="interest1"
+      />
+      <label for="interests1">valami 1</label>
+      <br />
+      <input
+        type="checkbox"
+        id="erdekeltsegek2"
+        name="erdekeltsegek[]"
+        value="erdekeltsegek2"
+      />
+      <label for="erdekeltsegek2">valami 2</label>
+      <br />
+      <input
+        type="checkbox"
+        id="interests3"
+        name="interests[]"
+        value="interest3"
+      />
+      <label for="interests3">valami 3</label>
+      <br />
+      Színek <br />
+      <label for="kek">Hupilila:</label>
+      <input type="checkbox" id="Hupilila" name="colors[]" value="kek" />
+      <br />
+      <label for="zold">Zöld:</label>
+      <input type="checkbox" id="zold" name="colors[]" value="zold" />
+      <br />
+      <label for="piros">Piros:</label>
+      <input type="checkbox" id="piros" name="colors[]" value="piros" />
+      <br />
+      <label for="lila">Rózsaszín:</label>
+      <input type="checkbox" id="rózsaszín" name="colors[]" value="lila" />
+      <br />
+      <label for="sarga">Szürke:</label>
+      <input type="checkbox" id="szurke" name="colors[]" value="sarga" />
+      <br />
+      <label for="gender">Nem:</label>
+      <select id="gender" name="gender" required>
+        <option value="">válassz nemet</option>
+
+        <option value="male">Férfi</option>
+
+        <option value="female">Nő</option>
+
+        <option value="other">Egyéb</option>
+      </select>
+
+      <br />
+
+      <label for="Name2">Kutya név:</label>
+
+      <input type="text" id="Name2" name="Name2" required />
+
+      <br/>
+
+      <label for="Name1">Cica név:</label>
+
+      <input type="text" id="Name1" name="Name1" required />
+
+      <br />
+
+      Számok:  <br />
+
+      <label for="Number1">szám1:</label>
+
+  
+      <input
+        type="number"
+        id="Number1"
+        name="Number1"
+        min="1"
+        max="100"
+      />
+
+       <br />
+
+       <label for="Number2">szám2:</label>
+
+      <input
+        type="number"
+        id="Number2"
+        name="Number2"
+        min="1"
+        max="100"
+      />
+
+       <br/>
+
+       <label for="Number3">szám3:</label>
+
+      <input
+        type="number"
+        id="Number3"
+        name="Number3"
+        min="1"
+        max="100"
+      />
+
+      <br />
+
+      <input type="submit" value="Submit" />
+
+    </form>
+
+  </body>
+</html>
